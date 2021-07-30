@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --orange:#ffa500;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+    color: white;
+    background: var(--orange);
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: .1rem solid #333;
+}
+
+.btn:hover{
+    background: white;
+    color: var(--orange);
+    letter-spacing: .2rem;
+    font-weight: bolder;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.heading span{
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+body{
+    background: #eee;
+    padding: 5rem;
+}
+
+section{
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 1000;
+    background: white;
+    width: 100%;
+}
+
+header h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #333;
+    text-transform: uppercase;
+}
+
+header h2 span{
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+header .nav-bar a{
+    color: var(--orange);
+    font-size: 2rem;
+    margin: 0 .8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+header .nav-bar a:hover{
+    background: #666;
+    font-weight: bolder;
+}
+
+#menu-bar{
+    position: fixed;
+    z-index: 10000;
+    top: 1rem; right:1rem;
+    padding: 1rem 1.5rem;
+    background: #666;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+#menu-bar:hover{
+    color: var(--orange);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home .content{
+    text-align: center;
+    position: absolute;
+    
+    z-index: 1;
+}
+
+.home .content img{
+    height: 25rem;
+    width: 25rem;
+    border: 1rem solid #666;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.home .content h3 span{
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.home .content p{
+    color:whitesmoke;
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+.home .content p span{
+    color: var(--orange);
+}
+
+.bg{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about .row .imge{
+    text-align: center;
+    flex: 1 1 25rem;
+}
+
+.about .row .imge img{
+    width: 30rem;
+    border: 1rem solid white;
+    border-radius: 0.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.about .row .content{
+    flex: 1 1 55rem;
+}
+
+.about .row .content h3{
+    color: #333;
+    font-size: 4rem;
+}
+
+.about .row .content h3 span{
+    color: var(--orange);
+}
+
+.about .row .content .info{
+    color: #666;
+    font-size: 1.7rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.about .row .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.about .row .content .box-container .box{
+    flex: 1 1 20rem;
+}
+
+.about .row .content .box-container .box p{
+    font-size: 1.7rem;
+    color: #222;
+    padding: .5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .box-container .box p span{
+    color: var(--orange);
+}
+
+.about .row .content .box-container .box p address{
+    font-size: 1.7rem;
+    color: #222;
+}
+
+.skills .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    
+}
+
+.skills .row .box-container{
+    flex: 1 1 40rem;
+}
+
+.skills .row .box-container{
+    
+    align-items: center;
+}
+
+.skills .row .box-container .text{
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills .row .box-container .text span{
+    color: var(--orange);
+}
+
+.skills .row .box-container p{
+     font-size: 1.7rem;
+     color: #666;
+     line-height: 2;
+}
+
+.skills .row .skill{
+    flex: 1 1 40rem;
+}
+
+.skills .row .skill .progress{
+    padding: 1rem 0;
+}
+
+.skills .row .skill .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    font-size: 1.7rem;
+    color: #222;
+    font-weight: 400;
+}
+
+.skills .row .skill .progress .bar{
+    width: 100%;
+    color: #666;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+    border: 0.1rem solid black;
+}
+
+.skills .row .skill .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--orange);
+}
+
+.skills .row .skill .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skills .row .skill .progress:nth-child(2) .bar span{
+    width: 75%;
+}
+.skills .row .skill .progress:nth-child(3) .bar span{
+    width: 75%;
+}
+.skills .row .skill .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+
+.skills .line{
+    height: 25rem;
+    border-left:0.1rem solid var(--orange) ;
+    padding: 2rem 0;
+}
+
+.projects .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.projects .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border: 1rem solid white;
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+}
+
+.projects .box-container .box{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects .box-container .box .content{
+    position: absolute;
+    left:-100%; top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 2rem;
+    padding-top: 5rem;
+
+}
+
+.projects .box-container .box:hover .content{
+    left: 0%;
+}
+
+.projects .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+
+.projects .box-container .box .content p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.contacs .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.contacs .row .imge{
+    flex: 1 1 30rem;
+    
+}
+
+.contacs .row .imge a{
+    display: block;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    color: #666;
+    text-align: center;
+}
+
+.contacs .row .imge a:hover{
+    color: var(--orange);
+    font-weight: bolder;
+}
+
+.contacs .row form{
+    flex: 1 1 50rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 0.5rem;
+}
+
+.contacs .row form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacs .row form .inputbox input,
+.contacs .row form .box,
+.contacs .row form textarea{
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+}
+
+.contacs .row form .inputbox input:focus,
+.contacs .row form .box:focus,
+.contacs .row form textarea:focus{
+    border-color: rgb(76, 128, 240);
+}
+
+
+
+
+
+/* media qweries */
+@media  (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media  (max-width:991px){
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media  (max-width:768px){
+    #menu-bar{
+        display: initial;
+        
+    }
+    header .nav-bar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: white;
+        border-top: 0.1rem solid #333;
+        padding:  1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+    header .nav-bar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+    }
+    header .nav-bar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #666;
+        border-radius: 0.5rem;
+    }
+    header .nav-bar a:hover{
+        box-shadow: 0 1rem 2rem 0.6rem black;
+    }
+    .contacs .row .imge a{
+        display: inline-flex;
+        padding: 1.5rem 0;
+    }
+    .skills .line{
+        display: none;
+    }
+   
+
+}
+
+@media  (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 4rem;
+    }
+}
